@@ -51,11 +51,19 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
-/*
+
     public void controlar (View v) {
-        String valorIngresado
+        String valorIngresado = et1.getText().toString();
+        int valor = Integer.parseInt(valorIngresado);
+        if(valor ==num){
+            Toast notificacion = Toast.makeText(this,"Muy bien recordaste el numero mostrado",Toast.LENGTH_LONG);
+            notificacion.show();
+        }else{
+            Toast notificacion = Toast.makeText(this,"Lo siento pero no es el numero que mostre.",Toast.LENGTH_LONG);
+            notificacion.show();
+        }
     }
-*/
+
 
 
 }
